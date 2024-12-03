@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Techno Charm';
+  src: url('../public/fonts/TechnoCharm.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Questrial';
+    src: url('/fonts/Questrial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+   */

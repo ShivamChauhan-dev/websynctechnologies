@@ -1,0 +1,541 @@
+.c-btn.-slideover {
+    text-transform: uppercase;
+    color: var(--text-new2);
+    background: var(--primary-color3);
+    position: relative;
+    -webkit-transition: all .3s !important;
+    transition: all .3s !important;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: .9px;
+}
+
+.s-hero-tabs .c-btn, .s-hero-tabs .gform_button, .s-hero-tabs .wpcf7-submit {
+    margin: 30px auto 0;
+}
+
+.c-btn, .gform_button, .wpcf7-submit {
+    --btn-ico-color: currentColor;
+    --icon-shift: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: transparent;
+    position: relative;
+    text-decoration: none;
+    border: none;
+    white-space: nowrap;
+    -webkit-transition: all var(--base-transition);
+    transition: all var(--base-transition);
+    font-size: var(--btn-font-size, 1.8rem);
+    font-family: var(--btn-font-family);
+    text-transform: var(--btn-text-transform, none);
+    font-weight: var(--btn-font-weight, 400);
+    -webkit-box-shadow: var(--btn-box-shadow, none);
+    box-shadow: var(--btn-box-shadow, none);
+    border-radius: var(--btn-border-radius, 0);
+    margin: 2px;
+    padding: var(--btn-padding-top-bottom, 10px) var(--btn-padding-left-right, 20px);
+}
+
+a {
+    -webkit-transition: color var(--base-transition);
+    transition: color var(--base-transition);
+}
+a {
+    color: var(--primary-link-color);
+}
+a {
+    text-decoration: none;
+}
+
+:is(a,button,input,textarea,summary) {
+    --outline-size: max(2px, 0.08em);
+    --outline-style: solid;
+    --outline-color: currentColor;
+}
+
+.c-btn.-slideover:before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(94deg, #009cff -2.26%, #9536e5 63.14%);
+    -webkit-filter: blur(9px);
+    filter: blur(9px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.c-btn.-slideover>span {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+;
+    padding: var(--btn-padding-top-bottom, 10px) 24px var(--btn-padding-top-bottom, 10px) 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.c-btn>span, .gform_button>span, .wpcf7-submit>span {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.c-btn.-slideover {
+    text-transform: uppercase;
+    color: var(--text-new2);
+    background: var(--primary-color3);
+    position: relative;
+    -webkit-transition: all .3s !important;
+    transition: all .3s !important;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: .9px;
+}
+
+:is(a,button,input,textarea,summary) {
+    --outline-size: max(2px, 0.08em);
+    --outline-style: solid;
+    --outline-color: currentColor;
+}
+
+.c-btn.-slideover>span:before {
+    content: "";
+    position: absolute;
+    inset: -1px -20% -1px -20%;
+    background: linear-gradient(94deg, #009cff -2.26%, #9536e5 63.14%);
+    z-index: 1;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    border-radius: 100%;
+    pointer-events: none;
+}
+
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.c-btn.-slideover {
+    text-transform: uppercase;
+    color: var(--text-new2);
+    background: var(--primary-color3);
+    position: relative;
+    -webkit-transition: all .3s !important;
+    transition: all .3s !important;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: .9px;
+}
+
+.c-btn.-slideover>span:first-child span {
+    position: relative;
+    z-index: 2;
+}
+
+.c-btn.-slideover .c-btn__ico {
+    margin-left: 8px;
+}
+
+.c-btn__ico {
+    max-width: 15px;
+    min-width: 10px;
+    margin-left: 5px;
+    position: relative;
+    -webkit-transition: opacity var(--base-transition), -webkit-transform var(--base-transition), -webkit-filter var(--base-transition);
+    transition: opacity var(--base-transition), -webkit-transform var(--base-transition), -webkit-filter var(--base-transition);
+    transition: transform var(--base-transition), filter var(--base-transition), opacity var(--base-transition);
+    transition: transform var(--base-transition), filter var(--base-transition), opacity var(--base-transition), -webkit-transform var(--base-transition), -webkit-filter var(--base-transition);
+    pointer-events: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.-slideover.gform_button>span:after, .-slideover.wpcf7-submit>span:after, .c-btn.-slideover>span:after {
+    content: "";
+    position: absolute;
+    inset: -1px -20% -1px -20%;
+    background: linear-gradient(94deg, #009cff -2.26%, #9536e5 63.14%);
+    z-index: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: slideUp1Reverse .3s 1;
+    animation: slideUp1Reverse .3s 1;
+    pointer-events: none;
+}
+.c-btn__ico svg {
+    fill: var(--btn-ico-color);
+    color: var(--btn-ico-color);
+}
+
+.c-btn__ico svg {
+    margin: auto;
+    max-height: 16px;
+    min-width: 10px;
+}
+
+svg {
+    -webkit-transition: fill var(--base-transition), stroke var(--base-transition), background-color var(--base-transition), color var(--base-transition);
+    transition: fill var(--base-transition), stroke var(--base-transition), background-color var(--base-transition), color var(--base-transition);
+}
+img, svg {
+    vertical-align: middle;
+}
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+
+.-slideover.gform_button, .-slideover.wpcf7-submit, .c-btn.-slideover {
+    text-transform: uppercase;
+    color: var(--text-new2);
+    background: var(--primary-color3);
+    position: relative;
+    -webkit-transition: all .3s !important;
+    transition: all .3s !important;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: .9px;
+}
+.c-btn, .gform_button, .wpcf7-submit {
+    --btn-ico-color: currentColor;
+    --icon-shift: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: transparent;
+    position: relative;
+    text-decoration: none;
+    border: none;
+    white-space: nowrap;
+    -webkit-transition: all var(--base-transition);
+    transition: all var(--base-transition);
+    font-size: var(--btn-font-size, 1.8rem);
+    font-family: var(--btn-font-family);
+    text-transform: var(--btn-text-transform, none);
+    font-weight: var(--btn-font-weight, 400);
+    -webkit-box-shadow: var(--btn-box-shadow, none);
+    box-shadow: var(--btn-box-shadow, none);
+    border-radius: var(--btn-border-radius, 0);
+    margin: 2px;
+    padding: var(--btn-padding-top-bottom, 10px) var(--btn-padding-left-right, 20px);
+}
+a {
+    -webkit-transition: color var(--base-transition);
+    transition: color var(--base-transition);
+}
+:is(a,button,input,textarea,summary) {
+    --outline-size: max(2px, 0.08em);
+    --outline-style: solid;
+    --outline-color: currentColor;
+}
+a {
+    color: var(--primary-link-color);
+}
+a {
+    text-decoration: none;
+}
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+@media (max-width: 766px) {
+    .m-banner--large .m-banner__content {
+        text-align: center;
+    }
+}
+
+:root {
+    --h3-font-size: 3.4rem;
+    --h3-line-height: 1.2;
+}
+:root {
+    --swiper-navigation-size: 44px;
+}
+:root {
+    --swiper-theme-color: #007aff;
+}
+:root {
+    --aSpeed: .6s;
+}
+:root {
+    --grid-gutter-width: 0;
+    --grid-outer-margin: 20px;
+    --grid-gutter-compensation: calc((var(--grid-gutter-width)* 0.5)* -1);
+    --grid-half-gutter-width: calc((var(--grid-gutter-width)* 0.5));
+}
+:root {
+    --l-block-gap-vertical: 15px;
+    --l-block-gap-horizontal: 20px;
+    --c-block-title-size: clamp(var(--h4-font-size-mobile), var(--h-clamp-formula), var(--h4-font-size));
+    --c-block-title-weight: var(--h4-font-weight);
+    --c-block-title-transform: var(--h4-text-transform);
+    --c-block-title-color: var(--titles-color);
+    --c-block-text-size: var(--base-text-size);
+    --с-block-padding: 15px;
+    --c-block-align: left;
+    --c-block-bg: #fff;
+    --c-block-color: inherit;
+    --c-block-shadow: 0 0 4px 2px rgba(0, 0, 0, .05);
+    --c-block-radius: 0;
+}
+:root {
+    --header-hight: 100px;
+}
+:root {
+    --label-font-size: 1.6rem;
+    --label-font-weight: 400;
+    --label-color: var(--primary-color3);
+    --input-border-width: 1px;
+    --input-border-radius: px;
+    --input-padding-top-bottom: 10px;
+    --input-padding-left-right: 15px;
+    --input-font-size: 1.8rem;
+    --input-font-weight: 400;
+    --input-color: var(--primary-color1);
+    --input-background-color: transparent;
+    --input-border-color: var(--primary-color2);
+    --form-row-margin-top-bottom: 15px;
+    --form-row-margin-left-right: 0px;
+    --message-font-size: 1.6rem;
+    --message-line-height: 1.5;
+    --message-font-weight: 400;
+    --validation-error-color: #da747b;
+    --validation-success-color: #50b2a0;
+    --validation-notice-color: #ffb700;
+}
+@media (max-width: 1112px) {
+    :root {
+        --btn-font-size: 18px;
+    }
+}
+
+:root {
+    --btn-font-family: var(--font-family-primary);
+    --btn-font-size: 20px;
+    --btn-font-weight: 500;
+    --btn-text-transform: none;
+    --btn-padding-top-bottom: .7em;
+    --btn-padding-left-right: 1.4em;
+    --btn-border-radius: 0;
+    --btn-primary-color: var(--secondary-color1);
+    --btn-primary-color-hover: var(--primary-color2);
+    --btn-primary-bg: rgba(255, 255, 255, 0.1);
+    --btn-primary-border-color: var(--secondary-color1);
+    --btn-primary-border: 1px;
+    --btn-primary-shadow: 0px 0px 5px 1px rgba(31, 113, 162, 0.3), inset 0 0 5px 0 rgba(7, 118, 185, 0.3);
+    --btn-secondary-color: var(--primary-color3);
+    --btn-secondary-color-hover: var(--primary-color1);
+    --btn-secondary-gradient: linear-gradient(131.8deg, #00C2FF 0%, #355AF8 100%);
+    --btn-secondary-bg: var(--secondary-color1);
+    --btn-secondary-bg-hover: var(--secondary-color2);
+    --btn-secondary-border-color: var(--secondary-color2);
+    --btn-secondary-border-color-hover: var(--secondary-color2);
+    --btn-secondary-border: 1px;
+    --btn-secondary-shadow: none;
+    --btn-secondary-padding-top-bottom: 13px;
+    --btn-secondary-padding-left-right: 4.8vmin;
+    --btn-link-color: var(--primary-color1);
+    --btn-link-color-hover: var(--primary-color2);
+    --link-icon-color: var(--primary-color2);
+    --btn-link-font-weight: 700;
+    --button-flex-direction: row;
+    --btn-simple-font-size: 18px;
+    --btn-link-offset: 5px;
+}
+
+@media (max-width: 1112px) {
+    :root {
+        --base-text-size: 2.25rem;
+    }
+}
+
+:root {
+    --font-family-primary: "roboto", sans-serif;
+    --base-text-size: 2rem;
+    --base-text-font: var(--font-family-primary);
+    --base-text-line-height: 1.6;
+    --base-text-font-weight: 400;
+    --bigger-text-size: 3rem;
+    --larger-text-size: 2.2rem;
+    --larger-text-font-weight: 400;
+    --medium-text-size: 2rem;
+    --smaller-text-size: 1.6rem;
+    --smaller-text-font-weight: 400;
+    --blog-text-size: 18px;
+    --blog-text-font-weight: 400;
+    --thin-text-font-weight: 300;
+    --h-clamp-formula: 4.45vw + 1.5rem;
+    --h1-font-size: 7.5rem;
+    --h1-font-size-mobile: 42px;
+    --h1-line-height: 1.1;
+    --h1-letter-spacing: 0;
+    --h1-margin-bottom: .7em;
+    --h1-font: var(--font-family-primary);
+    --h1-font-weight: 700;
+    --h1-text-transform: uppercase;
+    --h1-text-transform-none: none;
+    --h2-font-size: 5.8rem;
+    --h2-font-size-mobile: 30px;
+    --h2-line-height: 1.2;
+    --h2-letter-spacing: 0;
+    --h2-margin-bottom: 15px;
+    --h2-font: var(--font-family-primary);
+    --h2-font-weight: 700;
+    --h2-text-transform: none;
+    --h3-font-size: 3.8rem;
+    --h3-font-size-mobile: 28px;
+    --h3-line-height: 1.2;
+    --h3-letter-spacing: 0;
+    --h3-margin-bottom: .5em;
+    --h3-font: var(--font-family-primary);
+    --h3-font-weight: 700;
+    --h3-text-transform: none;
+    --h4-font-size: 2.1rem;
+    --h4-font-size-mobile: 16px;
+    --h4-line-height: 1.5;
+    --h4-letter-spacing: 1;
+    --h4-margin-bottom: .5em;
+    --h4-font: var(--font-family-primary);
+    --h4-font-weight: 700;
+    --h4-text-transform: none;
+    --pretitle-color: #00B9FF;
+    --pretitle-color-alt: var(--secondary-color1);
+    --pretitle-font-size: 3.2rem;
+    --pretitle-font-size-mobile: 15px;
+    --pretitle-line-height: 1.2;
+    --pretitle-letter-spacing: 1.1px;
+    --pretitle-margin-bottom: .3em;
+    --pretitle-font: var(--font-family-primary);
+    --pretitle-font-weight: 700;
+    --pretitle-text-transform: uppercase;
+    --subtitle-color: var(--primary-color2);
+    --subtitle-color-alt: var(--secondary-color1);
+    --subtitle-font-size: 2.8rem;
+    --subtitle-font-size-mobile: 20px;
+    --subtitle-line-height: 1.4;
+    --subtitle-letter-spacing: 1;
+    --subtitle-margin-bottom: .3em;
+    --subtitle-font: var(--font-family-primary);
+    --subtitle-font-weight: 400;
+    --subtitle-text-transform: none;
+}
+
+@media (max-width: 1112px) {
+    :root {
+        --page-gutter: 20px;
+        --vertical-gap: 20px;
+        --content-width: var(--tablet-width);
+    }
+}
+
+:root {
+    --phone-width: 576px;
+    --tablet-width: 768px;
+    --desktop-width: 1112px;
+    --desktop-width-sm: 1024px;
+    --desktop-width-m: 1280px;
+    --desktop-width-l: 1580px;
+    --desktop-width-xl: 1660px;
+    --desktop-width-xxl: 1820px;
+    --content-width: 1440px;
+    --blog-width: 1000px;
+    --blog-text-width: 800px;
+    --blog-head-width: clamp(768px, 70%, 992px);
+    --page-gutter: 20px;
+    --grid-gutter: 24px;
+    --vertical-gap: 5vmin;
+    --base-transition: .3s;
+    --primary-color1: #01AFE9;
+    --primary-color1-rgb: 1, 175, 233;
+    --primary-color2: #1B2C5C;
+    --primary-color2-rgb: 27, 44, 92;
+    --primary-color3: #fff;
+    --primary-color3-rgb: 255, 255, 255;
+    --secondary-color1: #ffffff;
+    --secondary-color2: #009CFF;
+    --secondary-color2-rgb: 0, 156, 255;
+    --secondary-color3: #04E4FF;
+    --secondary-color4: transparent;
+    --secondary-color5: #9536E5;
+    --secondary-color6: #18CCFC;
+    --secondary-color7: #131848;
+    --secondary-color8: #90C404;
+    --text-new1: #5F6568;
+    --text-new2: #3B7BCE;
+    --bg-color1: #F1F5FE;
+    --body-bg: #fff;
+    --body-bg-alt: #00042A;
+    --body-bg-alt2: #00031F;
+    --body-text-color: var(--primary-color2);
+    --body-text-color-alt: var(--primary-color3);
+    --titles-color: var(--primary-color2);
+    --titles-color-alt: var(--secondary-color1);
+    --titles-color-accent: var(--primary-color1);
+    --primary-link-color: var(--primary-color1);
+    --primary-link-color-alt: var(--secondary-color3);
+    --border-color: #333;
+    --wp--preset--color--vivid-cyan-blue: #0693e3;
+    --hero-bg-spacing: 12px;
+}
+html {
+    font-size: 50%;
+}
+.c-btn.-slideover:before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(94deg, #009cff -2.26%, #9536e5 63.14%);
+    -webkit-filter: blur(9px);
+    filter: blur(9px);
+    z-index: -1;
+    pointer-events: none;
+}
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.c-btn.-slideover>span:before {
+    content: "";
+    position: absolute;
+    inset: -1px -20% -1px -20%;
+    background: linear-gradient(94deg, #009cff -2.26%, #9536e5 63.14%);
+    z-index: 1;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    border-radius: 100%;
+    pointer-events: none;
+}

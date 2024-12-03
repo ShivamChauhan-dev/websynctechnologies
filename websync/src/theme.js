@@ -1,49 +1,28 @@
 import { createTheme } from '@mui/material/styles';
 
-const lightTheme = createTheme({
-    palette: {
-        mode: 'light',
-        primary: {
-            main: '#1980F6',
-        },
-        secondary: {
-            main: '#05E6C6',
-        },
-        background: {
-            default: '#FFFFFF',
-            paper: '#F5F5F5',
-        },
-        text: {
-            primary: '#06153C',
-            secondary: '#1980F6',
-        },
+const theme = createTheme({
+  typography: {
+    fontFamily: '"Questrial", sans-serif', // Default font (used in Navbar and other components)
+    technoCharm: {
+      fontFamily: '"Techno Charm", sans-serif', // Custom font for Hero Section
     },
-    typography: {
-        fontFamily: "Questrial", // Set Questrial as the primary font
+  },
+  palette: {
+    primary: {
+      main: '#1980F6', // Primary color
     },
+    secondary: {
+      main: '#05E6C6', // Secondary color
+    },
+    background: {
+      default: '#FFFFFF', // Background color
+      paper: '#F9FAFB',
+    },
+    text: {
+      primary: '#000000',
+      secondary: '#4F4F4F',
+    },
+  },
 });
 
-const darkTheme = createTheme({
-    palette: {
-        mode: 'dark',
-        primary: {
-            main: '#05E6C6',
-        },
-        secondary: {
-            main: '#1980F6',
-        },
-        background: {
-            default: '#06153C',
-            paper: '#121212',
-        },
-        text: {
-            primary: '#FFFFFF',
-            secondary: '#05E6C6',
-        },
-    },
-    typography: {
-        fontFamily: "Questrial", // Set Questrial as the primary font
-    },
-});
-
-export { lightTheme, darkTheme };
+export { theme };

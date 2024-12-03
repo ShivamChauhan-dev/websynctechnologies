@@ -1,4 +1,3 @@
-// menuLinks.js
 const menuLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about-us' },
@@ -6,6 +5,7 @@ const menuLinks = [
     { name: 'Portfolio', path: '/portfolio' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
-];
-
-export default menuLinks;
+  ];
+  
+  export default menuLinks;
+  
