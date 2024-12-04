@@ -59,7 +59,7 @@ const HeroSection = () => {
           <Box
             component="span"
             sx={{
-              background: 'linear-gradient(to right, #1980F6, #05E6C6)', // Gradient for WEBSYNC
+              background: '#ffffff', // Gradient for WEBSYNC
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               mr: 1, 
