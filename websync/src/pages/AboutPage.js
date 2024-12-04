@@ -1,24 +1,32 @@
 import React from 'react';
-import { Box, Typography, useTheme } from '@mui/material';
+import { Box } from '@mui/material';
+import AboutHero from '../components/About/AboutHero';
+import MissionSection from '../components/About/MissionSection';
+import TeamSection from '../components/About/TeamSection';
 
 const AboutPage = () => {
-  const theme = useTheme();
-
   return (
     <Box
       sx={{
         minHeight: '100vh',
-        backgroundColor: theme.palette.background.default, // Dynamic background
-        color: theme.palette.text.primary, // Dynamic text color
-        padding: '20px',
+        background: 'linear-gradient(180deg, #06153C,#06153C,#1980F6)', // Gradient background
+        color: '#FFFFFF',
+        fontFamily:'Questrial',
+        padding: '40px 20px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        paddingTop:'100px',
       }}
     >
-      <Typography variant="h3" sx={{ mb: 2 }}>
-        About Us
-      </Typography>
-      <Typography variant="body1">
-        At WebSync Technologies, we aim to provide exceptional solutions to help your business grow.
-      </Typography>
+      {/* Hero Section */}
+      <AboutHero />
+
+      {/* Mission Section */}
+      <MissionSection />
+
+      {/* Team Section */}
+      <TeamSection />
     </Box>
   );
 };

@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 } */
+
+/* App.css */
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background: url('/loading-background.jpg') no-repeat center center/cover; Background image */
+  background-color: #ffffffe2;
+  z-index: 9999;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out; /* Smooth fade-out */
+}
+
+.preloader-image {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+  animation: bounce 1.5s infinite ease-in-out; /* Optional bounce animation */
+}
+
+.fade-out {
+  opacity: 0; /* Fades the preloader */
+  visibility: hidden; /* Hides it completely after fading */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

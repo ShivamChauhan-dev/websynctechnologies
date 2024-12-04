@@ -62,7 +62,7 @@ const HeroSection = () => {
               background: 'linear-gradient(to right, #1980F6, #05E6C6)', // Gradient for WEBSYNC
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-              mr: 1, // Add margin between WEBSYNC and TECHNOLOGIES
+              mr: 1, 
             }}
           >
             WEBSYNC
