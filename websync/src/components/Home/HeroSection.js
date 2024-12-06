@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { keyframes } from '@emotion/react';
 import './HeroSection.css'; 
+import { Link } from 'react-router-dom';
 
 // Animation Keyframes
 const fadeIn = keyframes`
@@ -31,6 +32,7 @@ const HeroSection = () => {
         paddingLeft: { xs: '20px', md: '100px' }, // Adjust padding for mobile and larger screens
         paddingRight: { xs: '20px', md: '100px' }, // Add padding on the right for smaller screens
         position: 'relative',
+        
       }}
     >
       {/* Top Content */}
@@ -52,7 +54,7 @@ const HeroSection = () => {
             fontFamily: (theme) => theme.typography.technoCharm.fontFamily, // Apply the font
             display: 'flex',
             flexWrap: 'wrap',
-            fontSize: { xs: '3rem', md: '5rem' }, // Smaller font size for mobile
+            fontSize: { xs: '2rem', md: '5rem' }, // Smaller font size for mobile
             lineHeight: { xs: '1.2', md: '1' }, // Adjust line height for readability
           }}
         >
@@ -108,9 +110,11 @@ const HeroSection = () => {
         </Typography>
 
         {/* Button */}
+        <Link to='/contact'>
         <button className="btn" style={{ fontSize: '1rem', padding: '10px 20px' }}>
-          Get Started
+          REQUEST A QUOTE 
         </button>
+        </Link>
       </Box>
     </Box>
   );

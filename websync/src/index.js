@@ -8,7 +8,7 @@ import { theme } from './theme'; // Added darkTheme for theme toggle
 import { CssBaseline } from '@mui/material';
 import '@fontsource/questrial'; // Import Questrial font
 import './fonts.css';
-
+// import Main from './Main'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,6 +18,7 @@ root.render(
       <ThemeProvider theme={theme}> 
         <CssBaseline />
         <App />
+        {/* <Main/> */}
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>

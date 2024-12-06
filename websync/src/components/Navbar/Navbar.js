@@ -3,6 +3,7 @@ import { AppBar, Toolbar, IconButton, Box, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import MobileDrawer from './MobileDrawer';
 import NavLinks from './NavLinks';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down('md')); // Check for mobile view
@@ -69,6 +70,11 @@ function Navbar() {
               <NavLinks isScrolled={isScrolled} />
             </Box>
           )}
+          <Link to='/contact'>
+        <button className="btn" style={{ fontSize: '1rem', padding: '10px 20px' }}>
+          GET QUOTE
+        </button>
+        </Link>
         </Toolbar>
       </AppBar>
 

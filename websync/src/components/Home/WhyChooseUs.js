@@ -4,19 +4,19 @@ import { Box, Grid, Typography } from '@mui/material';
 const WhyChooseUs = () => {
   const features = [
     {
-      icon: '/icons/technology.svg', // Replace with your actual path
+      icon: '/icons/technology.png', // Replace with your actual path
       title: 'New Technology Integrations',
       description:
         'Integrating new technologies into website development is a trend that will continue.',
     },
     {
-      icon: '/icons/customized.svg', // Replace with your actual path
+      icon: '/icons/creativity.png', // Replace with your actual path
       title: '100% Customized Solutions',
       description:
         'We offer our clients a variety of website development services and solutions.',
     },
     {
-      icon: '/icons/support.svg', // Replace with your actual path
+      icon: '/icons/support.png', // Replace with your actual path
       title: '24x7 Support',
       description:
         'Our support team offers the most practical solutions to your technical problems.',
@@ -27,7 +27,8 @@ const WhyChooseUs = () => {
     <Box
       sx={{
         py: 8,
-        background: 'linear-gradient(135deg, #06153c, #06153c, #06153c)',
+        // background: 'linear-gradient(180deg, #06153C, #06153C, #1980F6)',
+        background: 'linear-gradient(145deg, #06153C, #1980F6,#06153C, #1980F6,#06153C, #1980F6)',
         color: '#fff',
         textAlign: 'center',
       }}
@@ -59,7 +60,7 @@ const WhyChooseUs = () => {
       {/* Features Section */}
       <Grid container spacing={4} justifyContent="center">
         {features.map((feature, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
+          <Grid item xs={10.5} sm={6} md={3.83} key={index}>
             <Box
               sx={{
                 p: 4,
@@ -68,6 +69,14 @@ const WhyChooseUs = () => {
                 textAlign: 'center',
                 boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
                 color: '#000',
+                transition: 'all 0.3s ease',
+                '&:hover': {
+                  transform: 'scale(1.05)',
+                  boxShadow: '0px 6px 25px rgba(0, 0, 0, 0.2)',
+                  background: 'linear-gradient(135deg, #1980f6, #05e6c6)', // Change to orange on hover
+                  color: '#FFFFFF', // Optional: Change text color on hover
+                //   boxShadow: '0px 6px 25px rgba(0, 0, 0, 0.2)', // Optional: Enhance shadow
+                },
               }}
             >
               {/* Icon */}
@@ -78,7 +87,7 @@ const WhyChooseUs = () => {
                 sx={{
                   height: '80px',
                   mb: 2,
-                  filter: 'invert(25%) sepia(83%) saturate(747%) hue-rotate(350deg) brightness(102%) contrast(102%)', // Optional color
+                  filter: 'invert(13%) sepia(48%) saturate(715%) hue-rotate(186deg) brightness(80%) contrast(110%)' // Optional color
                 }}
               />
               {/* Title */}

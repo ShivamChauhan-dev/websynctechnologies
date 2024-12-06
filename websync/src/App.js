@@ -8,6 +8,11 @@ import HomePage from './pages/HomePage'; // Home page
 import AboutPage from './pages/AboutPage'; // About page
 import ServicesPage from './pages/ServicesPage'; // Services page
 import './App.css'; // Add CSS styles for preloader
+import Footer from './pages/Footer';
+import ContactPage from './pages/ContactPage';
+import BlogPage from './pages/BlogPage';
+// import OurServices from './components/Home/OurServices';
+import OurWorkPage from './pages/OurWorkPage';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Preloader state
@@ -37,7 +42,11 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about-us" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/our-work" element={<OurWorkPage />} />
           </Routes>
+          <Footer/>
         </>
       )}
     </ThemeProvider>
