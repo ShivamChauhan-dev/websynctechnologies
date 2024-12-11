@@ -1,0 +1,23 @@
+.text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    background: #003049;
+    overflow: hidden;
+}
+
+.icons-move {
+    /* height: 500px; */
+    width: 1500px;
+    letter-spacing: 1px;
+    animation: move-rtl 30s linear infinite;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+        }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

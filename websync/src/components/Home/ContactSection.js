@@ -5,10 +5,9 @@ const ContactSection = () => {
     return (
         <Box
             sx={{
-                padding: '50px 20px',
+                padding: '100px 20px',
                 // background: 'linear-gradient(360deg , #06153C, #1980F6 )',
-                background: 'linear-gradient(145deg, #06153C, #1980F6,#06153C, #1980F6,#06153C, #1980F6)',
-                backgroundSize: '300% 300%',
+                background: 'linear-gradient(47deg, #06153C, #1980F6,#06153C, #1980F6,#06153C, #1980F6)',
                 color: '#fff',
                 textAlign: 'center',
             }}
@@ -57,19 +56,19 @@ const ContactSection = () => {
                     <Grid item xs={12} sm={6}>
                         <TextField
                             label="First Name"
-                            variant="outlined"
+                            variant="filled"
                             fullWidth
                             required
-                            sx={{ backgroundColor: '#f9f9f9' }}
+                            // sx={{ backgroundColor: '#f9f9f9' }}
                         />
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <TextField
                             label="Last Name"
-                            variant="outlined"
+                            variant="filled"
                             fullWidth
                             required
-                            sx={{ backgroundColor: '#f9f9f9' }}
+                            // sx={{ backgroundColor: '#f9f9f9' }}
                         />
                     </Grid>
 
@@ -77,10 +76,10 @@ const ContactSection = () => {
                     <Grid item xs={12}>
                         <TextField
                             label="Email"
-                            variant="outlined"
+                            variant="filled"
                             fullWidth
                             required
-                            sx={{ backgroundColor: '#f9f9f9' }}
+                            // sx={{ backgroundColor: '#f9f9f9' }}
                         />
                     </Grid>
 
@@ -88,12 +87,12 @@ const ContactSection = () => {
                     <Grid item xs={12}>
                         <TextField
                             label="Message"
-                            variant="outlined"
+                            variant="filled"
                             fullWidth
                             multiline
                             rows={4}
                             required
-                            sx={{ backgroundColor: '#f9f9f9' }}
+                            // sx={{ backgroundColor: '#f9f9f9' }}
                         />
                     </Grid>
 

@@ -6,11 +6,13 @@ import ContactSection from '../components/Home/ContactSection';
 import WhyChooseUs from '../components/Home/WhyChooseUs';
 import OurServices from '../components/Home/OurServices';
 import TechStack from '../components/Home/TechStack';
+// import Branding from '../components/Home/Branding';
 
 const HomePage = () => {
     return (
         <div>
             <HeroSection />
+            {/* <Branding/> */}
             <WhyChooseUs/>
             <OurServices/>
             {/* <FeaturesSection /> */}
