@@ -54,3 +54,208 @@ a {
   max-width: 50px;
   max-height: 50px;
 }
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(-45deg, #00827c, #031740, #020e23, #490172);
+  background-size: 200% 100%;
+  animation: gradient 10s ease infinite;
+  height: 100%;
+  
+  
+
+
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {  
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e7bed2, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #edd5e1, 0 0 40px #d5b1c3, 0 0 50px #fff, 0 0 60px #fff, 0 0 30px #fff, 0 0 40px #fff;
+  }
+}
+
+
+
+
+.container-thought{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.container-thought p{
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+.container-thought button{
+  border-radius: 4px;
+  border: none;
+  color: #78014e;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0px;
+  width: 380px;
+  transition: all 0.8s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+
+.container-thought .button2:hover{
+  color: floralwhite;
+  background: linear-gradient(-45deg, #780146, #020e23, #780146, #020e23);
+  background-size: 200% 100%;
+  animation: gradient 8s ease infinite;
+  height: 100%;
+}
+
+
+
+
+.main-container-card {
+  padding-left: 10%;
+  padding-right: 10%;
+  height: auto;
+}
+.container{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+
+}
+.container-1{
+  height: 500px;
+  width: 45%;
+}
+.container-img{
+  margin-top: 12%;
+}
+.container-img img{
+  min-width: 400px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%; 
+}
+.container-2{
+  padding-left: 7%;
+  height: 500px;
+  width: 45%;
+}
+
+.container-content{
+  margin: 2%;
+  text-align: left;
+}
+.container-content h1{
+  font-size: 55px;
+}
+.container-content p{
+  font-size: 25px;
+
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #00c8ff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px 50px;
+  width: 480px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.container-email{
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #031740;
+}
+.signup-message{
+  width: 100%;
+}
+.signup-message h1{
+  font-size: 40px;
+}
+
+
+
+.signup-field{
+  margin-left: 10%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  width: 100%;
+  display: flex;
+  border-color: #FFFFFF;
+}
+.signup-field input{
+  border-color: #00c8ff;
+  background-color: transparent;
+  height: 60px;
+  width: 60%;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.button-signup{
+  border: none;
+  background-color: #00c8ff;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  width: 130px;
+  transition: all 0.8s;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 7px;
+}
+.button-signup:hover{
+  color: #020e23;
+}
