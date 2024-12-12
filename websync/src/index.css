@@ -61,7 +61,9 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: rgb(255, 255, 255);
-  background: linear-gradient(-45deg, #00827c, #031740, #020e23, #490172);
+  /* background: linear-gradient(-45deg, #00827c, #031740, #020e23, #490172); */
+  background: linear-gradient(180deg,  #06153c,#1980f6,#1980f6,#06153c);
+
   background-size: 200% 100%;
   animation: gradient 10s ease infinite;
   height: 100%;
