@@ -3,11 +3,6 @@ import { Box, Typography, Button, Grid, Container, TextField } from '@mui/materi
 
 function Services() {
   return (
-<<<<<<< HEAD
-    // <div>ServicesPage</div>
-    <div>  </div>
-  )
-=======
     <Box sx={{paddingTop: '100px'}}>
       {/* Header Section */}
       <Box sx={{ textAlign: 'center', py: 5, background: 'linear-gradient(90deg, #4f3cc9, #8247e5)', color: '#fff' }}>
@@ -90,7 +85,6 @@ function Services() {
       </Box>
     </Box>
   );
->>>>>>> 5f417ee6c5d32450c35abeefa011f161d58cf08a
 }
 
 const contentData = [
