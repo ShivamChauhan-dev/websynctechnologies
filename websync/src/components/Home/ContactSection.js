@@ -14,14 +14,14 @@ const ContactSection = () => {
         >
             {/* Heading */}
             <Typography
-                variant="h4"
+                variant="h3"
                 sx={{
                     mb: 4,
                     fontWeight: 'bold',
                     fontFamily: '"Questrial", sans-serif',
                 }}
             >
-                Get in Touch
+                <span style={{ color: '#06153C' }}>Get</span> in <span style={{ color: '#05E6C6' }}>Touch</span>
             </Typography>
             <Typography
                 variant="body1"
@@ -102,7 +102,7 @@ const ContactSection = () => {
                             variant="contained"
                             fullWidth
                             sx={{
-                                backgroundColor: '#1976D2',
+                                background: 'linear-gradient(140deg, #06153C,#1980F6,#06153C)',
                                 color: '#fff',
                                 padding: '10px 20px',
                                 textTransform: 'uppercase',

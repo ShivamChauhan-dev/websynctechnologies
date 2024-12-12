@@ -67,7 +67,7 @@ const OurServices = () => {
             fontFamily: '"Questrial", sans-serif',
           }}
         >
-          Our Services
+          Our <span style={{ color: '#05E6C6' }}>Services </span>
         </Typography>
         <Typography
           variant="body1"

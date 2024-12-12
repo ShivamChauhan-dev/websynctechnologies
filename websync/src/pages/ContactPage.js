@@ -55,7 +55,7 @@ const ContactPage = () => {
                 <TextField
                   label="First Name*"
                   fullWidth
-                  variant="outlined"
+                  variant="filled"
                   size="small"
                   sx={{ background: '#f9f9f9' }}
                 />
@@ -64,7 +64,7 @@ const ContactPage = () => {
                 <TextField
                   label="Last Name*"
                   fullWidth
-                  variant="outlined"
+                  variant="filled"
                   size="small"
                   sx={{ background: '#f9f9f9' }}
                 />
@@ -73,7 +73,7 @@ const ContactPage = () => {
                 <TextField
                   label="*Phone"
                   fullWidth
-                  variant="outlined"
+                  variant="filled"
                   size="small"
                   sx={{ background: '#f9f9f9' }}
                 />
@@ -82,7 +82,7 @@ const ContactPage = () => {
                 <TextField
                   label="*Email"
                   fullWidth
-                  variant="outlined"
+                  variant="filled"
                   size="small"
                   sx={{ background: '#f9f9f9' }}
                 />
@@ -93,7 +93,7 @@ const ContactPage = () => {
                   fullWidth
                   multiline
                   rows={4}
-                  variant="outlined"
+                  variant="filled"
                   sx={{ background: '#f9f9f9' }}
                 />
               </Grid>
@@ -120,7 +120,7 @@ const ContactPage = () => {
                     fontWeight: 'bold',
                     fontSize: '1rem',
                     '&:hover': {
-                      background: '#1565C0',
+                      background: 'linear-gradient(to right, #1980F6, #05E6C6)',
                     },
                   }}
                 >
