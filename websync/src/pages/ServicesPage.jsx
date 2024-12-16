@@ -1,149 +1,192 @@
 import * as React from 'react';
-import { Box, Typography, Button, Grid, Container, TextField } from '@mui/material';
+
+
 
 function Services() {
   return (
-    <Box sx={{paddingTop: '100px'}}>
-      {/* Header Section */}
-      <Box sx={{ textAlign: 'center', py: 5, background: 'linear-gradient(90deg, #4f3cc9, #8247e5)', color: '#fff' }}>
-        <Typography variant="h3" fontWeight="bold">
-          From Concept To Reality
-        </Typography>
-        <Typography variant="subtitle1" sx={{ mt: 2 }}>
-          Fusing Creativity With Marketing & Technology To Drive Business Growth
-        </Typography>
-        <Button variant="contained" sx={{ mt: 3, backgroundColor: '#00b8d4', '&:hover': { backgroundColor: '#0097a7' } }}>
-          SPEAK WITH OUR EXPERTS
-        </Button>
-      </Box>
+    <div>
+      
+      <div className="container-thought">
+        <h1>From Concept To Reality</h1>
+        <p>Fusing Creativity With Marketing & Technology To Drive Business Growth</p>
+        <button className="button2"><span>SPEAK WITH OUR EXPERTS </span></button>
+      </div>
+      
+
 
       {/* Section-1 */}
-      <Container sx={{ py: 5 }}>
-        {contentData.map((item, index) => (
-          <Grid
-            container
-            spacing={3}
-            key={index}
-            direction={index % 2 === 0 ? 'row' : 'row-reverse'}
-            alignItems="center"
-            sx={{ mb: 5 }}
-          >
-            <Grid item xs={12} md={6}>
-              <Box
-                sx={{
-                  boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
-                  borderRadius: 2,
-                  overflow: 'hidden',
-                }}
-              >
-                <img src={item.image} alt="Service" style={{ width: '100%' }} />
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Typography variant="h4" fontWeight="bold" color="primary">
-                {item.title}
-              </Typography>
-              <Typography variant="body1" sx={{ mt: 2, color: '#555' }}>
-                {item.description}
-              </Typography>
-              <Box sx={{ mt: 3 }}>
-                <Button
-                  variant="contained"
-                  sx={{
-                    backgroundColor: '#00b8d4',
-                    '&:hover': { backgroundColor: '#0097a7' },
-                  }}
-                >
-                  {item.buttonText}
-                </Button>
-              </Box>
-            </Grid>
-          </Grid>
-        ))}
-      </Container>
 
-      {/* Signup Section */}
-      <Box sx={{ textAlign: 'center', py: 5, background: 'linear-gradient(90deg, #4f3cc9, #8247e5)', color: '#fff' }}>
-        <Typography variant="h4" fontWeight="bold">
-          Sign Up To Get The Latest Digital Trends
-        </Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3 }}>
-          <TextField
-            placeholder="Enter your email"
-            variant="outlined"
-            sx={{
-              mr: 2,
-              width: '300px',
-              backgroundColor: '#fff',
-              borderRadius: 1,
-            }}
-          />
-          <Button variant="contained" sx={{ backgroundColor: '#00b8d4', '&:hover': { backgroundColor: '#0097a7' } }}>
-            SIGN UP
-          </Button>
-        </Box>
-      </Box>
-    </Box>
+      <div className="main-container-card">
+        
+        
+        <div className="container">   {/* content1 */}
+          <div className="container-1">
+            <div className="container-img">
+              <img src="/pexels-fauxels-3184360.jpg" alt="" />
+            </div>
+          </div>
+
+          <div className="container-2">
+            <div className="container-content">
+              <h1>Digital Strategies & Branding</h1>
+              <p>Integrating brand strategy with digital initiatives to improve customer experience online & offline</p>
+              <button className="button"><span>Explore Branding Services </span></button>
+            </div>
+          </div>
+        </div>
+        
+        <div className="container">   {/* content2 */}
+          <div className="container-1">
+            <div className="container-content">
+              <h1>Web Design & Development</h1>
+              <p>Custom web & app development with strategic insights to generate greater brand engagement, higher conversions & measurable results</p>
+              <button className="button"><span>Explore Branding Services </span></button>
+            </div>
+          </div>
+
+          <div className="container-2">
+            <div className="container-img">
+              <img src="/pexels-fauxels-3184360.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+
+
+        <div className="container">   {/* content3 */}
+          <div className="container-1">
+            <div className="container-img">
+              <img src="/pexels-fauxels-3184360.jpg" alt="" />
+            </div>
+          </div>
+
+          <div className="container-2">
+            <div className="container-content">
+              <h1>Results-Driven Digital Marketing</h1>
+              <p>Multichannel marketing approaches focused on increasing conversions, encouraging repeat traffic and heightening visibility</p>
+              <button className="button"><span>Explore Branding Services </span></button>
+            </div>
+          </div>
+        </div>
+        
+        <div className="container">   {/* content4 */}
+          <div className="container-1">
+            <div className="container-content">
+              <h1>Custom Development</h1>
+              <p>An agile approach to building scalable custom software and integrating the latest technologies with a dynamic user experience</p>
+              <button className="button"><span>Explore Branding Services </span></button>
+            </div>
+          </div>
+
+          <div className="container-2">
+            <div className="container-img">
+              <img src="/pexels-fauxels-3184360.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div className="container">   {/* content 5 */}
+          <div className="container-1">
+            <div className="container-img">
+              <img src="/pexels-fauxels-3184360.jpg" alt="" />
+            </div>
+          </div>
+
+          <div className="container-2">
+            <div className="container-content">
+              <h1>Full-Service eCommerce Development</h1>
+              <p>Custom eCommerce sites developed for superior performance, greater conversions and engagement</p>
+              <button className="button"><span>Explore Branding Services </span></button>
+            </div>
+          </div>
+        </div>
+        
+        <div className="container">   {/* content 6 */}
+          <div className="container-1">
+            <div className="container-content">
+              <h1>High-Performance Shopify Websites</h1>
+              <p>Custom Shopify eCommerce sites designed, developed and optimized for superior performance, better rankings and higher conversion</p>
+              <button className="button"><span>Explore Branding Services </span></button>
+            </div>
+          </div>
+
+          <div className="container-2">
+            <div className="container-img">
+              <img src="/pexels-fauxels-3184360.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div className="container">   {/* content 7 */}
+          <div className="container-1">
+            <div className="container-img">
+              <img src="/pexels-fauxels-3184360.jpg" alt="" />
+            </div>
+          </div>
+
+          <div className="container-2">
+            <div className="container-content">
+              <h1>Enterprise Resource Planning</h1>
+              <p>Customizing & integrating enterprise resource planning solutions for deeper insights & better decision-making</p>
+              <button className="button"><span>Explore Branding Services </span></button>
+            </div>
+          </div>
+        </div>
+        
+        <div className="container">   {/* content 8 */}
+          <div className="container-1">
+            <div className="container-content">
+              <h1>B2B Lead Generation</h1>
+              <p>Harnessing the power of data and multichannel strategy to optimize sales pipeline and funnel in high-quality leads</p>
+              <button className="button"><span>Explore Branding Services </span></button>
+            </div>
+          </div>
+
+          <div className="container-2">
+            <div className="container-img">
+              <img src="/pexels-fauxels-3184360.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      
+      
+      </div>
+
+
+
+    {/* section-2 */}
+
+    <div className="container-email">
+      <div className="signup-message">
+          <h1>Sign Up To Get The Latest Digital Trends</h1>
+      </div>
+      <div className="signup-field">
+          <input type="text" />
+          <button className='button-signup'><span>SIGNUP</span></button>
+      </div>
+    </div>
+
+    {/* section-3 */}
+
+
+    <div className="form-container">
+      
+
+    </div>
+
+
+
+
+
+
+    </div>
   );
 }
-
-const contentData = [
-  {
-    title: 'Digital Strategies & Branding',
-    description:
-      'Integrating brand strategy with digital initiatives to improve customer experience online & offline.',
-    image: '/pexels-fauxels-3184360.jpg',
-    buttonText: 'Explore Branding Services',
-  },
-  {
-    title: 'Web Design & Development',
-    description:
-      'Custom web & app development with strategic insights to generate greater brand engagement, higher conversions & measurable results.',
-    image: '/pexels-fauxels-3184360.jpg',
-    buttonText: 'Explore Web Design Services',
-  },
-  {
-    title: 'Results-Driven Digital Marketing',
-    description:
-      'Multichannel marketing approaches focused on increasing conversions, encouraging repeat traffic and heightening visibility.',
-    image: '/pexels-fauxels-3184360.jpg',
-    buttonText: 'Explore Marketing Services',
-  },
-  {
-    title: 'Custom Development',
-    description:
-      'An agile approach to building scalable custom software and integrating the latest technologies with a dynamic user experience.',
-    image: '/pexels-fauxels-3184360.jpg',
-    buttonText: 'Explore Development Services',
-  },
-  {
-    title: 'Full-Service eCommerce Development',
-    description:
-      'Custom eCommerce sites developed for superior performance, greater conversions and engagement.',
-    image: '/pexels-fauxels-3184360.jpg',
-    buttonText: 'Explore eCommerce Services',
-  },
-  {
-    title: 'High-Performance Shopify Websites',
-    description:
-      'Custom Shopify eCommerce sites designed, developed and optimized for superior performance, better rankings and higher conversion.',
-    image: '/pexels-fauxels-3184360.jpg',
-    buttonText: 'Explore Shopify Services',
-  },
-  {
-    title: 'Enterprise Resource Planning',
-    description:
-      'Customizing & integrating enterprise resource planning solutions for deeper insights & better decision-making.',
-    image: '/pexels-fauxels-3184360.jpg',
-    buttonText: 'Explore ERP Services',
-  },
-  {
-    title: 'B2B Lead Generation',
-    description:
-      'Harnessing the power of data and multichannel strategy to optimize sales pipeline and funnel in high-quality leads.',
-    image: '/pexels-fauxels-3184360.jpg',
-    buttonText: 'Explore Lead Generation',
-  },
-];
 
 export default Services;

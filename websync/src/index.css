@@ -57,21 +57,21 @@ a {
 
 
 
+
+
+
+
+/* Global Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: rgb(255, 255, 255);
-  /* background: linear-gradient(-45deg, #00827c, #031740, #020e23, #490172); */
-  background: linear-gradient(180deg,  #06153c,#1980f6,#1980f6,#06153c);
-
+  color: #ffffff;
+  background: linear-gradient(-45deg, #00827c, #06153c, #06153c, #1980f6);
   background-size: 200% 100%;
   animation: gradient 10s ease infinite;
   height: 100%;
-  
-  
-
-
 }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -79,110 +79,103 @@ body {
   50% {
     background-position: 100% 50%;
   }
-  100% {  
+  100% {
     background-position: 0% 50%;
   }
 }
-@-webkit-keyframes glow {
+
+@keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e7bed2, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+    text-shadow: 0 0 30px #01f8e4,;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #edd5e1, 0 0 40px #d5b1c3, 0 0 50px #fff, 0 0 60px #fff, 0 0 30px #fff, 0 0 40px #fff;
+    text-shadow: 0 0 20px #7e04f0, 0 0 30px #045770;
   }
 }
 
-
-
-
-.container-thought{
-  margin-top: 100px;
-  margin-bottom: 100px;
+.container-thought {
+  margin: 100px 0;
   text-align: center;
 }
-.container-thought p{
+
+.container-thought p {
   font-size: 70px;
   font-weight: bold;
-  text-align: center;
   color: #ffffff;
-  text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-
-.container-thought button{
+.container-thought button {
   border-radius: 4px;
   border: none;
-  color: #78014e;
+  color: #06153c;
   font-size: 20px;
   font-weight: bold;
-  padding: 10px 0px;
+  padding: 10px 0;
   width: 380px;
   transition: all 0.8s;
   cursor: pointer;
   margin: 5px;
 }
 
-
-
-.container-thought .button2:hover{
+.container-thought .button2:hover {
   color: floralwhite;
-  background: linear-gradient(-45deg, #780146, #020e23, #780146, #020e23);
+  background: linear-gradient(-45deg, #02f0f8, #1980f6, #02f0f8, #1980f6);
   background-size: 200% 100%;
   animation: gradient 8s ease infinite;
-  height: 100%;
 }
-
-
-
 
 .main-container-card {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 0 10%;
   height: auto;
 }
-.container{
-  padding-top: 5%;
-  padding-bottom: 5%;
-  display: flex;
 
+.container {
+  padding: 5% 0;
+  display: flex;
 }
-.container-1{
+
+.container-1,
+.container-2 {
   height: 500px;
   width: 45%;
 }
-.container-img{
+
+.container-img {
   margin-top: 12%;
 }
-.container-img img{
+
+.container-img img {
   min-width: 400px;
   height: 100%;
   width: 100%;
-  border-radius: 5%; 
-}
-.container-2{
-  padding-left: 7%;
-  height: 500px;
-  width: 45%;
+  border-radius: 5%;
 }
 
-.container-content{
+.container-2 {
+  padding-left: 7%;
+}
+
+.container-content {
   margin: 2%;
   text-align: left;
 }
-.container-content h1{
-  font-size: 55px;
-}
-.container-content p{
-  font-size: 25px;
 
+.container-content h1 {
+  font-size: 55px;
+  color: #ffffff;
+}
+
+.container-content p {
+  font-size: 25px;
+  color: #ffffff;
 }
 
 .button {
   border-radius: 4px;
   background-color: #00c8ff;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-size: 28px;
   padding: 20px 50px;
@@ -191,12 +184,13 @@ body {
   cursor: pointer;
   margin: 5px;
 }
+
 .button span {
-  cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
+
 .button span:after {
   content: '\00bb';
   position: absolute;
@@ -205,39 +199,38 @@ body {
   right: -20px;
   transition: 0.5s;
 }
+
 .button:hover span {
   padding-right: 25px;
 }
+
 .button:hover span:after {
   opacity: 1;
   right: 0;
 }
 
-
-.container-email{
+.container-email {
   display: flex;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 0 10%;
   background-color: #031740;
 }
-.signup-message{
+
+.signup-message {
   width: 100%;
 }
-.signup-message h1{
+
+.signup-message h1 {
   font-size: 40px;
 }
 
-
-
-.signup-field{
+.signup-field {
   margin-left: 10%;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding: 35px 0;
   width: 100%;
   display: flex;
-  border-color: #FFFFFF;
 }
-.signup-field input{
+
+.signup-field input {
   border-color: #00c8ff;
   background-color: transparent;
   height: 60px;
@@ -246,18 +239,18 @@ body {
   font-size: 20px;
 }
 
-.button-signup{
+.button-signup {
   border: none;
   background-color: #00c8ff;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   font-weight: bold;
   width: 130px;
   transition: all 0.8s;
   cursor: pointer;
   margin-left: 5px;
-  margin-bottom: 7px;
 }
-.button-signup:hover{
+
+.button-signup:hover {
   color: #020e23;
 }
